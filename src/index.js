@@ -1,11 +1,34 @@
-import _ from "lodash";
+import _, { create } from "lodash";
+import todoItem from "./todoClass.js";
 
-function component() {
-  const element = document.createElement("div");
+const getTitle = function () {
+  let title = prompt("TODO's title:", "New TODO");
+  return title;
+};
 
-  element.innerHTML = _.join(["This", "is", "a", "test!"], " ");
+const getDescription = function () {
+  let description = prompt("TODO's description:", "...");
+  return description;
+};
 
-  return element;
-}
+const getDueDate = function () {
+  let dueDate = prompt("Due Date:", "mm/dd/yyyy");
+  return dueDate;
+};
 
-document.body.appendChild(component());
+const getPriority = function () {
+  let priority = prompt("TODO's priority:", "Low/Medium/High");
+  return priority;
+};
+
+const createTodo = function () {
+  let newTodo = new todoItem();
+  newTodo.title = getTitle();
+  newTodo.description = getDescription();
+  newTodo.dueDate = getDueDate();
+  newTodo.priority = getPriority();
+
+  return newTodo;
+};
+
+console.table(createTodo());
