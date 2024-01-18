@@ -1,0 +1,26 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body,
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-areas: "menu main";
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #79b8ff;
+}
+
+.main {
+  grid-area: main;
+  background-color: antiquewhite;
+}

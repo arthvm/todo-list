@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     app: "./src/index.js",
+    ui: "./src/handleUI.js",
   },
   plugins: [
     new HtmlWebpackPlugin({

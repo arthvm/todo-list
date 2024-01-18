@@ -3,6 +3,7 @@ class TodoItem {
   #description = "";
   #dueDate = new Date();
   #priority = "Low";
+  #project = "Inbox";
 
   get title() {
     return this.#title;
@@ -34,6 +35,14 @@ class TodoItem {
 
   set priority(newPriority) {
     this.#priority = newPriority;
+  }
+
+  get project() {
+    return this.#project;
+  }
+
+  set project(newProject) {
+    this.#project = newProject;
   }
 }
 

@@ -26,4 +26,11 @@ const getPriority = function () {
   //GET PRIORITY FROM INPUT FIELD
 };
 
+const getProject = function () {
+  /* TEST */
+  let project = prompt("Insert Project");
+  return project;
+  //GET PROJECT FROM INPUT FIELD
+};
+
 export { getTitle, getDescription, getDueDate, getPriority };
