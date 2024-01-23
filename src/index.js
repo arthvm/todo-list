@@ -20,6 +20,3 @@ const setTodoAttributes = function (currentTodo) {
 
   return currentTodo;
 };
-
-//TEST
-console.table(setTodoAttributes(createTodo()));
